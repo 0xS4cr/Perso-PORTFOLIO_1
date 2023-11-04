@@ -1,0 +1,19 @@
+@import './config/settings.scss';
+@import './config/mixins.scss';
+@import './config/variables.scss';
+
+//app
+@import './app.scss';
+
+//components
+@import '../components/logo/logo.scss';
+@import '../components/navbar/navbar.scss';
+@import '../components/collapse/collapse.scss';
+@import '../components/eyes/eyes.scss';
+@import '../components/socialbar/socialbar.scss';
+
+//pages
+@import '../pages/topbar/topbar.scss';
+@import '../pages/about/about.scss';
+@import '../pages/works/works.scss';
+@import '../pages/contact/contact.scss';

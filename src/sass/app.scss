@@ -1,0 +1,185 @@
+body {
+    color: $primaryColor;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    &::before,
+    &::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &::before {
+        z-index: -100;
+        background: $backgroundGradient;
+    }
+    &::after {
+        z-index: -99;
+        background: $grainBackground;
+        opacity: $grainOpacity;
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $sliderBackgroundColor;
+        transition: 0.4s;
+        &:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: 0.4s;
+        }
+    }
+    input:checked + .slider {
+        background-color: $sliderCheckedColor;
+    }
+    input:focus + .slider {
+        box-shadow: 0 0 1px $sliderFocusShadowColor;
+    }
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+}
+
+
+.colorized {
+    color: var(--secondaryColor);
+  }
+
+.home {
+    height: 100vh;
+    margin-bottom: 2vh;
+    .titleOne, .titleTwo {
+        position: relative;
+        height: 25vh;
+    }
+    .description {
+        position: relative;
+        height: 32vh;
+        @include flexColumn;
+        align-items: center;
+    }
+    .clement, .renaud {
+        font-family: $primaryFont;
+        font-weight: bolder;
+        font-size: 11vw;
+        width: 25vw;
+    }
+    .clement {
+        position: relative;
+        top: -2vh;
+        left: 7vw;
+    }
+    .renaud {
+        position: relative;
+        top: 0vh;
+        left: 29.8vw;
+    }
+    .from {
+        position: absolute;
+        top: 19vh;
+        left: 60vw;
+        p {
+            font-family: $secondaryFont;
+            font-weight: 300;
+            font-size: large;
+        }
+    }
+    .textHome {
+        position: absolute;
+        bottom: -8vh;
+        left: 7vw;
+        p {
+            font-family: $secondaryFont;
+            font-weight: 300;
+            font-size: large;
+        }
+    }
+    .image1 {
+        width: 17vw;
+        position: absolute;
+        z-index: -1;
+        right: 3vw;
+        top: 2vh;
+        img {
+            width: 100%;
+        }
+    }
+    .description {
+        .textDescription {
+            margin-top: 9vh;
+            width: 50%;
+            font-family: $primaryFont;
+            font-weight: 500;
+            font-size: 1.1vw;
+            text-align: center;
+        }
+        #scroll {
+            font-family: $primaryFont;
+            font-weight: 300;
+            font-size: small;
+            position: absolute;
+            bottom: -5vh;
+        }
+    }
+    .icon-scroll, .icon-scroll:before {
+        position: absolute;
+        left: 50%;
+    }
+    .icon-scroll {
+        width: 36px;
+        height: 60px;
+        margin-left: -18px;
+        top: 85%;
+        margin-top: -30px;
+        box-shadow: inset 0 0 0 2px $primaryColor;
+        border-radius: 25px;
+        @media (max-width: 2400px) {
+            box-shadow: inset 0 0 0 1px $primaryColor;
+        }
+    }
+    .icon-scroll:before {
+        content: '';
+        width: 6px;
+        height: 9px;
+        background: $primaryColor;
+        margin-left: -3px;
+        top: 8px;
+        border-radius: 4px;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-name: scroll;
+    }
+    @keyframes scroll {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+    }
+}

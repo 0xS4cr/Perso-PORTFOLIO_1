@@ -1,0 +1,19 @@
+:root {
+    --secondaryColor: #ffbffb;
+  }
+
+// Fonts
+$primaryFont: 'Noto Sans', sans-serif;
+$secondaryFont: 'Oswald', sans-serif;
+
+
+// Variables de couleurs
+$primaryColor: #131416;
+$backgroundGradient: radial-gradient(circle at center, whitesmoke, beige);
+$grainBackground: url('../assets/grain.png');
+$grainOpacity: 0.4;
+$sliderBackgroundColor: #ccc;
+$sliderCheckedColor: $primaryColor;
+$sliderFocusShadowColor: $primaryColor;
+
+//pink: #ffbffb  |  green :  	#98FB98  | bleu:  	#B0E0E6  | yellow: #f8f87c

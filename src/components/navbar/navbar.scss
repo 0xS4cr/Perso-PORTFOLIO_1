@@ -1,0 +1,51 @@
+.navbar{
+    position: absolute;
+    left: 41%;
+    @include flexRow;
+    align-items: center;
+    width: 57%;
+    font-weight: 400;
+    font-family: $primaryFont;
+}
+
+.link ul{
+    @include flexRow;
+    gap: 1vw;
+        li{
+            &::after{
+                content: ",";
+            }
+            &:hover, :focus{
+                text-decoration: underline;
+            }
+            
+        }
+}
+
+.settings {
+    position: absolute;
+    @include flexRow;
+    align-items: center;
+    gap: 10px;
+    right: 0;
+        button{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #131416;
+            cursor: pointer;
+        }
+        .btnPink{
+            background-color: #ffbffb;
+        }
+        .btnBlue{
+            background-color: #B0E0E6 ;
+        }
+        .btnYellow{
+            background-color: #f8f87c;
+        }
+        .btnGreen{
+            background-color: #98FB98;
+        }
+}
+  

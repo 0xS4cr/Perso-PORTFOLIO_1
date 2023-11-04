@@ -1,0 +1,55 @@
+// Section About
+.about {
+    height: 120vh;
+    @include flexRow;
+}
+
+.imgAbout {
+    position: relative;
+    width: 35vw;
+    img {
+        width: 150%;
+        position: relative;
+        z-index: -2;
+        left: -17vw;
+        top: 4.4vw;
+    }
+}
+
+.eyesMove {
+    position: relative;
+    left: -7vw;
+    top: -33.5vw;
+    z-index: 99;
+}
+
+.txtAbout {
+    width: 60vw;
+    h1 {
+        color: $primaryColor;
+        position: relative;
+        @include font($secondaryFont, normal, 10vw);
+        top: -15vh;
+        left: -29vw;
+        width: 90vw;
+    }
+    hr {
+        position: relative;
+        top: -17vh;
+    }
+    .pTop {
+        @include font($primaryFont, italic, 1vw);
+        font-weight: 900;
+        position: relative;
+        top: -15vh;
+        line-height: 2;
+        margin-bottom: -10vh;
+    }
+    .pDown{
+        @include font($primaryFont, large,1vw);
+        font-weight: 900;
+        line-height: 2;
+        position: relative;
+        margin-top: 5vh;
+    }
+}

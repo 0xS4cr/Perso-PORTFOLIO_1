@@ -1,0 +1,49 @@
+.ctnWorks{
+    height: 100vh;
+}
+
+.worksTitle{
+    position: relative;
+    width: 35vw;
+    top: 0vh;
+    left: 5vw;
+        h1{
+          width: 30vw;
+        color: $primaryColor;
+        position: relative;
+        @include font($primaryFont, large, 8vw);
+        }
+}
+
+.worksImg{
+    position: relative;
+    z-index: -1;
+    width: 25vw;
+    top: 0vh;
+    left: 70vh;
+     img{
+        width: 57vh;
+     }
+}
+
+.worksPlayImg {
+    position: relative;
+    z-index: -2;
+    width: 11vh;
+    top: -30vh;
+    left: 104.5vh;
+    animation: bounce 1.3s ease infinite; 
+  }
+  
+  .worksPlayImg img {
+    width: 10.5vh;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(14vh); /* Vous pouvez ajuster cette valeur */
+    }
+  }

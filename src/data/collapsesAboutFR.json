@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Développement Front-End",
+        "description": "Je me spécialise dans le développement front-end, en mettant l'accent sur l'écosystème React. J'ai la capacité d'assimiler rapidement de nouvelles technologies et de les intégrer dans mes projets. De plus, je suis familier avec l'utilisation de Git et de divers outils de gestion de projet, ce qui me permet de m'adapter facilement."
+    },
+    {
+        "title": "Conception UI",
+        "description": "Je possède un sens aigu du design UI et j'aspire à créer des interfaces visuellement attrayantes et conviviales. Pour cela, je suis à l'aise avec des outils tels que Figma, GIMP et Blender."
+    },
+    {
+        "title": "Interactivité",
+        "description": "Je suis passionné par l'amélioration de l'expérience utilisateur en ajoutant des animations et de l'interactivité à mes projets, les rendant ainsi plus captivants et agréables. J'étudie d'autres sites pour rendre les interactions intéressantes à la fois pour le grand public et pour les personnes en situation de handicap."
+    },
+    {
+        "title": "Expériences Immersives",
+        "description": "Mon objectif est de travailler avec diligence pour offrir aux utilisateurs une expérience agréable et immersive lorsqu'ils visitent un site web. Je crois en la création de sites web qui captivent et enchantent les utilisateurs. J'ai hâte d'explorer ThreeJS, même si je suis encore débutant."
+    },
+    {
+        "title": "Features",
+        "description": "J'apprécie énormément le langage Python, en particulier le nouveau venu : MOJO. Mojo est un langage de programmation développé par Modular IA, une entreprise d'infrastructure d'IA fondée par Chris Lattner. Il est conçu pour répondre aux besoins spécifiques des développeurs dans les domaines de l'intelligence artificielle, de l'automatisation et des systèmes embarqués."
+    }
+]

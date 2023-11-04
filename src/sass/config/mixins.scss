@@ -1,0 +1,43 @@
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin font($font-family, $font-weight, $font-size) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+@mixin text-style($background-color) {
+    background: linear-gradient($background-color, var(--secondaryColor));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 4px black;
+  }
+
+@mixin margin($top, $right, $bottom, $left) {
+    margin: $top $right $bottom $left;
+}
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+    box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin transition($properties, $duration, $timing-function) {
+    transition: $properties $duration $timing-function;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin linear-gradient($start-color, $end-color) {
+    background: linear-gradient($start-color, $end-color);
+}
