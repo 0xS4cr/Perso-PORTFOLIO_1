@@ -2,8 +2,7 @@
 # 👨‍💻 Clément's Portfolio 👨‍💻
 
 ## 🌟 Introduction 🌟
-Bienvenue dans le repository de mon portfolio pour le concours organisé sur Discord.
-Ce portfolio est principalement créé pour le P12 de la formation intégrateur Web  de OpenClassRooms
+Bienvenue dans le repository de test pour un portfolio
 
 
 ## 🛠 Technologies Utilisées 🛠
@@ -29,7 +28,7 @@ Ce portfolio est principalement créé pour le P12 de la formation intégrateur 
 
 1. Clonez le répertoire
    ```
-   git clone https://github.com/0xS4cr/PortfolioCR
+   git clone https://github.com/0xS4cr/Perso-PORTFOLIO_1
    ```
    
 2. Installez les dépendances
@@ -58,4 +57,4 @@ Ce projet est sous licence MIT.
 
 ---
 
-🌟 Merci de visiter mon portfolio ! 🌟
+🌟 Merci de visiter pour votre soutient ! 🌟
