@@ -6,7 +6,7 @@ function Contact() {
     return (
         <>
         <div>
-            <h1>coucou</h1>
+            <h1>contact</h1>
         </div>
          <div className="socialbar">
             <Socialbar />
